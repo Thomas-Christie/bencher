@@ -14,14 +14,10 @@ wheels = [
 [[package]]
 name = "bencherscaffold"
 version = "0.5.2"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/Thomas-Christie/BencherScaffold.git?branch=random-seeding#dc95b9ae55c837bdd0b3c38a6f63bd4b2d9b6ebe" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/49/be/749cdc1cb197ca2b3d0ae1dd360c7d26b30c94a5c3dbef40b74128dbb9c1/bencherscaffold-0.5.2.tar.gz", hash = "sha256:a36292c9dce4b075b1cf4da2f33b0acdaeeec50de92e4ca2cc0d81d93b1e3cfd", size = 6590, upload-time = "2026-03-24T17:55:27.451Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/d6/292a0e566853291c263faf0ec888a58e425829a8da553252e57f56154e9f/bencherscaffold-0.5.2-py3-none-any.whl", hash = "sha256:f863ca3ceaf0d4823e56ccaefdac36cb1614e53f28d92c5724528997ca6de808", size = 11651, upload-time = "2026-03-24T17:55:26.226Z" },
 ]
 
 [[package]]
@@ -217,7 +213,7 @@ dependencies = [
 
 [[package]]
 name = "mujocobenchmarks"
-version = "0.1.0"
+version = "0.2.0"
 source = { editable = "." }
 dependencies = [
     { name = "bencherscaffold" },
@@ -232,7 +228,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bencherscaffold", specifier = "~=0.5.2" },
+    { name = "bencherscaffold", git = "https://github.com/Thomas-Christie/BencherScaffold.git?branch=random-seeding" },
     { name = "box2d", specifier = ">=2.3.10,<3" },
     { name = "box2d-py", specifier = ">=2.3.8,<3" },
     { name = "cython", specifier = "<3.0" },
