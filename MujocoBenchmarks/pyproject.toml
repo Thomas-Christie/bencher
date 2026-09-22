@@ -6,7 +6,7 @@ authors = [{ name = "Leonard Papenmeier", email = "leonard@papenmeier.io" }]
 requires-python = "~=3.8.0"
 readme = "README.md"
 dependencies = [
-    "bencherscaffold~=0.5.2",
+    "bencherscaffold~=0.6.3",
     "mujoco-py==2.1.2.14",
     "mujoco==2.2.2",
     "gym>=0.24,<0.25",
@@ -23,7 +23,6 @@ start-benchmark-service = "mujocobenchmarks.main:serve"
 
 [tool.uv.sources]
 mujoco-py = { git = "https://github.com/LeoIV/mujoco-py.git" }
-bencherscaffold = { git = "https://github.com/Thomas-Christie/BencherScaffold.git", branch = "random-seeding" }
 
 [build-system]
 requires = ["uv_build>=0.9.6,<0.10.0"]
