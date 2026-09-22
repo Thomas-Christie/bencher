@@ -13,13 +13,16 @@ wheels = [
 
 [[package]]
 name = "bencherscaffold"
-version = "0.5.2"
-source = { git = "https://github.com/Thomas-Christie/BencherScaffold.git?branch=random-seeding#dc95b9ae55c837bdd0b3c38a6f63bd4b2d9b6ebe" }
+version = "0.6.3"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-
+sdist = { url = "https://files.pythonhosted.org/packages/2f/c7/aa9ae1237f8c60e98f2611da08bb64d77326ecc91262ecd1beb99bed3e75/bencherscaffold-0.6.3.tar.gz", hash = "sha256:2f23165fc3bd41d224efe2da86c9a554f88b79b0e57bc0bfb920a57f4fef4289", size = 7083, upload-time = "2026-09-22T12:35:20.195Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5b/46/aa279cc1530162e0aabdd427d1bd3ee9287da87db41e5f860ac2f7e23b20/bencherscaffold-0.6.3-py3-none-any.whl", hash = "sha256:1be62464c1025f6a750e542e9e2fd021f0d93eb2448adcf2947002c576f67c7d", size = 12163, upload-time = "2026-09-22T12:35:18.801Z" },
+]
 [[package]]
 name = "box2d"
 version = "2.3.10"
@@ -228,7 +231,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bencherscaffold", git = "https://github.com/Thomas-Christie/BencherScaffold.git?branch=random-seeding" },
+    { name = "bencherscaffold", specifier = "~=0.6.3" },
     { name = "box2d", specifier = ">=2.3.10,<3" },
     { name = "box2d-py", specifier = ">=2.3.8,<3" },
     { name = "cython", specifier = "<3.0" },
